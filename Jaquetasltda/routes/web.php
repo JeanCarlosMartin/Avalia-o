@@ -4,8 +4,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dadosContato');
 });
+
+Route::get('/produto', function () {
+    return view('produtos');
+})->name('produto');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -18,3 +22,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
