@@ -4,7 +4,6 @@
 
 @section('conteudo')
 
-<img src="IMG/jqt1.webp">
-<img src="IMG/jqt2.jpeg">
+
 
 @endsection
